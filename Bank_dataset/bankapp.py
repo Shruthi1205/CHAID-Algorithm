@@ -6,7 +6,7 @@ from decisiontree import DecisionTree
 
 
 # Define a function to make predictions
-def predict_churn(data):
+def predict_term(data):
     # Load the saved model
     with open('chaid_model.pkl', 'rb') as f:
         model = pickle.load(f)
@@ -79,7 +79,7 @@ def main():
 
     prediction=""
     if st.button("Predict"):
-        prediction=predict_churn(data_encoded)
+        prediction=predict_term(data_encoded)
         st.success(f"The predicted status is: {prediction}")
     
 
