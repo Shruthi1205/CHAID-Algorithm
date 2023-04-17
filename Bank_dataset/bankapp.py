@@ -4,7 +4,6 @@ import numpy as np
 import pickle
 from decisiontree import DecisionTree
 
-print(pwd)
 # Define a function to make predictions
 def predict_term(data):
     # Load the saved model
